@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="true" name="Configuration1" category="opl">
+            			
+            <ref name="SAAD_Job_Scheduling_Project.mod" type="model">
+			</ref>
+            			
+            <ref name="SAAD_Job_Scheduling_Project.ops" type="setting">
+			</ref>
+            			
+            <ref name="SAAD_Job_Scheduling_Project.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>
