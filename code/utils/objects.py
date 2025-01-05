@@ -104,9 +104,9 @@ class MyReader:
         # Open the file
         with open(path, 'r') as f:
             lines = f.readlines()
-            # Ignore the first line
+            
           
-            second_line = lines[2].strip().split()
+            second_line = lines[1].strip().split()
             number_jobs = int(second_line[0])
             number_machines = int(second_line[1])
             self.optimum_value = int(second_line[4])
@@ -117,7 +117,7 @@ class MyReader:
             processing_times = []
             machine_assignments = []
 
-            for line in lines[5:]:
+            for line in lines[3:]:
                     if ('machines' in line) or ('Machines' in line):
                         reading_processing_times = False
                         continue
@@ -188,7 +188,7 @@ class MyReader:
                         f.write('\n'.join(sub_problem))
                     sub_problem_counter += 1
                     sub_problem = []
-            sub_problem.append(line)
+            sub_problem.append(line.strip())
         
         # Write the last sub_problem to a file
         if sub_problem:
