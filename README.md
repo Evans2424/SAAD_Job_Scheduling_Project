@@ -15,8 +15,9 @@ The problems used in this project are based on [this](http://mistic.heig-vd.ch/t
 
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/project-name.git
-   cd project-name
+   git clone git@github.com:Evans2424/SAAD_Job_Scheduling_Project.git
+   cd SAAD_Job_Scheduling_Project
+    ```
 
 3. Create a new conda environment:
    ```bash
